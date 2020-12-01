@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-4p] %m%n"/>
+        </Console>
+        <!-- File Appender -->
+        <File name="File" fileName="target//log4jlogs//testlog.log">
+            <PatternLayout pattern=" %d [%-4p] %c{3} – %m%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
