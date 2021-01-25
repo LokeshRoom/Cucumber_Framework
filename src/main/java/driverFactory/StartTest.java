@@ -14,6 +14,7 @@ public class StartTest {
     private static String yamlFile;
     private static ExtentReports extentReports;
     public Scenario scenario;
+    public static boolean setScreenshotforEachStep = true;
 
     public static DriverFactory getDriverInstance() {
         return driverFactory;

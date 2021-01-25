@@ -1,8 +1,37 @@
 Objects:
-  Google_HomepageURL: https://google.com
-  Google_HomePage:
-    txt_SearchBox:
-      name: q
+  Bewakoof_HomepageURL: https://bewakoof.com
+  BewakoofLoginPage:
+    txt_Username:
+      xpath: //input[@name='username']
+    btn_Continue:
+      xpath: //button[text()='Continue']
+    txt_Password:
+      xpath: //input[@name='password']
+    btn_Login:
+      xpath: //button[text()='LOG IN']
+  BewakoofProductPage:
+    lnk_Product1:
+      xpath: //div[@class="productCardDetail"]//h3
+    btn_AddToCart:
+      id: addToCart
+    btn_GoToBag:
+      xpath: //span[text()='GO TO BAG']
+    lbl_ProductName:
+      id: testProName
+    lbl_Price:
+      xpath: //span[contains(@id,'NetProdPrice')]
+  BewakoofCartPage:
+    lbl_ProductName:
+      xpath: //a[contains(@class,'cartProductName')]
+    lbl_Size:
+      xpath: //b[contains(@id,'ChangeSize')]
+    lbl_Price:
+      xpath: //span[contains(@class,'cartProductPrice')]
+    lnk_Remove:
+      id: testRemoveCart
+
+
+
 
 
 

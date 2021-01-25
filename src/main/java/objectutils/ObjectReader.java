@@ -19,7 +19,7 @@ public class ObjectReader {
         return object.getJSONObject("Objects").getString(urlKey);
     }
 
-    protected static By getElement(JSONObject object, String element, String page) throws Exception {
+    protected static By getElement(JSONObject object, String element, String page, String... appendValueToLocator) throws Exception {
         String locator = object.getJSONObject("Objects").getJSONObject(page).getJSONObject(element).keys().next();
         String value = object.getJSONObject("Objects").getJSONObject(page).getJSONObject(element).getString(locator);
         By locatorValue = null;

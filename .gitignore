@@ -1,6 +1,7 @@
 /target/
 /.idea/
 /cucumber.iml
+/Reports/
 
 # Compiled class file
 *.class
